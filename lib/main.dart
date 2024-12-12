@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MaterialApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-   @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -16,30 +16,30 @@ class MyApp extends StatelessWidget {
             CircleAvatar(
               radius: 60.0,
               backgroundColor: Colors.white54,
-              backgroundImage: NetworkImage("https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
-
+              backgroundImage: NetworkImage(
+                "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+              ),
             ),
-            Text("Fiorella de Fatima Guadalupe",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 22.0,
-              fontWeight: FontWeight.w700,
-
-            ),),
-
-            Text("FLUTTER DEVELOPER",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 15.0,
-              letterSpacing: 2.0,
-              fontWeight: FontWeight.w400,
-
-            ),),
+            Text(
+              "Fiorella de Fátima Guadalupe",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 22.0,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            Text(
+              "FLUTTER DEVELOPER",
+              style: TextStyle(
+                color: Colors.white60,
+                fontSize: 15.0,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
           ],
         ),
       ),
     );
-    
   }
-  
 }
